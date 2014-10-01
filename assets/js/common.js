@@ -11,8 +11,10 @@
 // Listen for the jQuery ready event on the document
    $(function() { // The DOM is ready!
     
-    alert("test");
+    $("#BSContainer").load("bs_bin/bs_content.html", function(){ // load brand store content
 
+
+		alert("test");
 
 	}); // The DOM is end!
 // The rest of the code goes here!
