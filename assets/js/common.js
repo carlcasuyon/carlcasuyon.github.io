@@ -12,7 +12,6 @@
    $(function() { // The DOM is ready!
     
 
-   	
    	//--- Container Align Center
 		var wr = $('#splash');
 		setWindow(wr);
