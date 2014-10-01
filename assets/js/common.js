@@ -12,7 +12,7 @@
    $(function() { // The DOM is ready!
     
 
-
+   	$("#google").load("https://www.google.com.ph");
 
    	//--- Container Align Center
 		var wr = $('#splash');
