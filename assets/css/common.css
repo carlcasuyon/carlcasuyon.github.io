@@ -1,10 +1,38 @@
 body {
   background: #e1e1e1;
-  background: -moz-linear-gradient(left, #e1e1e1 1%, white 25%, white 52%, white 75%, #f1f1f1 100%);
-  background: -webkit-gradient(linear, left top, right top, color-stop(1%, #e1e1e1), color-stop(25%, white), color-stop(52%, white), color-stop(75%, white), color-stop(100%, #f1f1f1));
-  background: -webkit-linear-gradient(left, #e1e1e1 1%, white 25%, white 52%, white 75%, #f1f1f1 100%);
-  background: -o-linear-gradient(left, #e1e1e1 1%, white 25%, white 52%, white 75%, #f1f1f1 100%);
-  background: -ms-linear-gradient(left, #e1e1e1 1%, white 25%, white 52%, white 75%, #f1f1f1 100%);
-  background: linear-gradient(to right, #e1e1e1 1%, white 25%, white 52%, white 75%, #f1f1f1 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e1e1e1', endColorstr='#f1f1f1',GradientType=1 );
+  background: -moz-linear-gradient(left, #e1e1e1 0%, white 25%, white 50%, white 75%, #e1e1e1 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #e1e1e1), color-stop(25%, white), color-stop(50%, white), color-stop(75%, white), color-stop(100%, #e1e1e1));
+  background: -webkit-linear-gradient(left, #e1e1e1 0%, white 25%, white 50%, white 75%, #e1e1e1 100%);
+  background: -o-linear-gradient(left, #e1e1e1 0%, white 25%, white 50%, white 75%, #e1e1e1 100%);
+  background: -ms-linear-gradient(left, #e1e1e1 0%, white 25%, white 50%, white 75%, #e1e1e1 100%);
+  background: linear-gradient(to right, #e1e1e1 0%, white 25%, white 50%, white 75%, #e1e1e1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e1e1e1', endColorstr='#e1e1e1',GradientType=1 );
+  font-family: "League Gothic normal";
+  position: relative;
+}
+
+#splash {
+  width: 400px;
+  height: 350px;
+  text-transform: uppercase;
+  position: absolute;
+}
+
+h1 {
+  font-size: 70px;
+  text-align: center;
+  margin: -22px 0;
+  padding: 0;
+  color: #101010;
+}
+h1 span {
+  color: #474747;
+}
+
+p {
+  text-align: center;
+  font-size: 29px;
+  padding: 0;
+  margin: 0;
+  color: #cccccc;
 }
