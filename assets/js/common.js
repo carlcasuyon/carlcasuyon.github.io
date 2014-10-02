@@ -12,6 +12,13 @@
    $(function() { // The DOM is ready!
     
 
+    $('body').waitForImages({
+	    waitForAll: true,
+	    finished: function() {
+	       // All images have loaded.
+	    }  
+	});
+
    	//--- Container Align Center
 		var wr = $('#splash');
 		setWindow(wr);
@@ -32,7 +39,7 @@
 		        'top' : height/2 - (div.height() / 2), // similar
 		        'z-index' : 15,                        // make sure element is on top
 		    });
-	}//--- Container Align function
+		}//--- Container Align function
 
 
 	}); // The DOM is end!
