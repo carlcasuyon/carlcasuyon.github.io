@@ -12,12 +12,25 @@
    $(function() { // The DOM is ready!
     
 
-    $('body').waitForImages({
-	    waitForAll: true,
-	    finished: function() {
-	       // All images have loaded.
-	    }  
-	});
+
+		$.fn.preload = function (fn) {
+		    var len = this.length, i = 0;
+		    return this.each(function () {
+		        var tmp = new Image, self = this;
+		        if (fn) tmp.onload = function () {
+		            fn.call(self, 100 * ++i / len, i === len);
+		        };
+		        tmp.src = this.src;
+		    });
+		};
+
+		$('img').preload(function(perc, done) {
+		    console.log(this, perc, done);
+		});
+
+
+
+   
 
    	//--- Container Align Center
 		var wr = $('#splash');
