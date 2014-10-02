@@ -25,7 +25,6 @@ $.fn.preload = function (fn) {
 };
 
 $('img').preload(function(perc, done) {
-    $(this).hide()
     $(this).fadeIn("fast");
     console.log(this, perc, done);
 });
