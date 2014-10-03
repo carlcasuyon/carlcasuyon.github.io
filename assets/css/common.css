@@ -1,11 +1,11 @@
 body {
   top: 0;
   left: 0;
+  margin: 0;
   background: #00406e;
   background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 960, from(#1b8ee0), to(#00406e)) no-repeat #00406e;
   background: -moz-radial-gradient(50% 50% 0deg, ellipse farthest-corner, #1b8ee0, #00406e, #00406e 170%);
   background: -o-radial-gradient(50% 50%, #1b8ee0, #00406e);
-  margin: 0;
   position: fixed;
   font-family: "League Gothic normal";
   position: relative;
