@@ -1,39 +1,23 @@
 
-$color-1 : #fff
-$color-2: #e1e1e1
+$foreground-color : #fff
+$background-color : #b4b8c1
+$feather : 100% 
 
 body
-	top: 0
-	left: 0
-	margin: 0
-	background: #00406E
-	background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 960, from(#1B8EE0), to(#00406E)) no-repeat #00406E
-	background:  -moz-radial-gradient(50% 50% 0deg,ellipse farthest-corner, #1B8EE0, #00406E, #00406E 170%)
-	background:  -o-radial-gradient(50% 50%, #1B8EE0, #00406E)
-	position: fixed
-	font-family: 'League Gothic normal'
-	position: relative
-	 
+	background: $background-color
+	
+#allset
+	background: $foreground-color /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  $foreground-color 0%, $background-color $feather) /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, $feather, color-stop(0%,$foreground-color), color-stop($feather,$background-color)) /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  $foreground-color 0%,$background-color $feather) /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  $foreground-color 0%,$background-color $feather) /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  $foreground-color 0%,$background-color $feather) /* IE10+ */
+	background: radial-gradient(ellipse at center,  $foreground-color 0%,$background-color $feather) /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$foreground-color', endColorstr='$background-color',GradientType=1 ) /* IE6-9 fallback on horizontal gradient */
+	height: 1000px
 
-#splash
-	width: 400px
-	height: 350px
-	text-transform: uppercase
-	position: absolute
-h1
-	font-size: 70px
-	text-align: center
-	margin: -22px 0
-	padding: 0
-	color: #101010
 
-	span
-		color: #474747
-
-p
-	text-align: center
-	font-size: 29px
-	padding: 0
-	margin: 0
-	color: #ccc
-
+@import resets
+@import splash
+@import elements

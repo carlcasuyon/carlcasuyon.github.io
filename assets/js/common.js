@@ -30,7 +30,16 @@ $('img').preload(function(perc, done) {
 });*/
 
 
-
+   	allset_height();
+   	
+	function allset_height() {
+		var window_h = $( window ).height();
+		console.log(window_h);
+		$("#allset").css({
+			height : window_h
+		});
+	}
+	
 
 
    	//--- Container Align Center
@@ -39,6 +48,7 @@ $('img').preload(function(perc, done) {
 
 		$(window).resize(function() {
 		 	setWindow(wr);
+		 	allset_height();
 		});
 		//--- Container Align Center
 
@@ -52,7 +62,9 @@ $('img').preload(function(perc, done) {
 		        'left' : width/2 - (div.width() / 2),  // half width - half element width
 		        'top' : height/2 - (div.height() / 2), // similar
 		        'z-index' : 15,                        // make sure element is on top
-		    });
+			});
+
+			console.log( height/2 )
 		}//--- Container Align function
 
 

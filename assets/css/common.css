@@ -1,38 +1,91 @@
 body {
-  top: 0;
-  left: 0;
+  background: #b4b8c1;
+}
+
+#allset {
+  background: white;
+  background: -moz-radial-gradient(center, ellipse cover, white 0%, #b4b8c1 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, white), color-stop(100%, #b4b8c1));
+  background: -webkit-radial-gradient(center, ellipse cover, white 0%, #b4b8c1 100%);
+  background: -o-radial-gradient(center, ellipse cover, white 0%, #b4b8c1 100%);
+  background: -ms-radial-gradient(center, ellipse cover, white 0%, #b4b8c1 100%);
+  background: radial-gradient(ellipse at center, white 0%, #b4b8c1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$foreground-color', endColorstr='$background-color',GradientType=1 );
+  height: 1000px;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
-  background: #00406e;
-  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 960, from(#1b8ee0), to(#00406e)) no-repeat #00406e;
-  background: -moz-radial-gradient(50% 50% 0deg, ellipse farthest-corner, #1b8ee0, #00406e, #00406e 170%);
-  background: -o-radial-gradient(50% 50%, #1b8ee0, #00406e);
-  position: fixed;
-  font-family: "League Gothic normal";
-  position: relative;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+a, dl a {
+  cursor: pointer;
 }
 
 #splash {
   width: 400px;
-  height: 350px;
+  height: auto;
   text-transform: uppercase;
   position: absolute;
+  font-family: "League Gothic normal";
 }
-
-h1 {
+#splash h1 {
   font-size: 70px;
   text-align: center;
-  margin: -22px 0;
+  margin: -12px 0;
   padding: 0;
   color: #101010;
 }
-h1 span {
+#splash h1 span {
   color: #474747;
 }
-
-p {
+#splash p {
   text-align: center;
-  font-size: 29px;
+  font-size: 27px;
   padding: 0;
   margin: 0;
   color: #cccccc;
 }
+
+/* reset */
