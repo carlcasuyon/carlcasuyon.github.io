@@ -13,6 +13,7 @@
     
 
 
+/* -- IMAGES PRELOADER
 $.fn.preload = function (fn) {
     var len = this.length, i = 0;
     return this.each(function () {
@@ -25,9 +26,8 @@ $.fn.preload = function (fn) {
 };
 
 $('img').preload(function(perc, done) {
-    $(this).fadeIn("fast");
     console.log(this, perc, done);
-});
+});*/
 
 
 
