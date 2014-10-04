@@ -70,27 +70,33 @@ a, dl a {
   position: absolute;
   /*font-family: 'League Gothic normal' */
   font-family: "Open Sans", sans-serif;
+  text-shadow: 1px 1px 1px white;
 }
 #splash h1 {
   font-size: 55px;
   text-align: center;
   margin: 0;
   padding: 0;
-  color: #0066cc;
+  color: #333333;
   font-weight: 800;
-  letter-spacing: -2px;
+  letter-spacing: -4px;
 }
 #splash h1 span {
-  color: #333333;
+  color: #0066cc;
 }
 #splash p {
   text-align: center;
   font-size: 40px;
   padding: 0;
-  margin: -10px 0;
+  margin: 0;
   color: #cccccc;
   font-weight: 300;
   letter-spacing: -3px;
+}
+#splash p span {
+  font-size: 20px;
+  letter-spacing: 3px;
+  display: block;
 }
 
 /* reset */
